@@ -1,0 +1,33 @@
+.chat-main
+  .chat-main__group-info
+    .chat-main__group-info__group-name
+      techcamp
+    .chat-main__group-info__members-name
+      Member:kent
+    = link_to "#", class: "chat-main__group-info__edit-group" do
+      Edit
+  .chat-main__message-list
+    .chat-main__message-list__message-box
+      .chat-main__message-list__message-box__create-info
+        .chat-main__message-list__message-box__create-info__user-name
+          kent
+        .chat-main__message-list__message-box__create-info__create-date
+          2020-1-1
+      .chat-main__message-list__message-box__message
+        初投稿です
+    .chat-main__message-list__message-box
+      .chat-main__message-list__message-box__create-info
+        .chat-main__message-list__message-box__create-info__user-name
+          nao
+        .chat-main__message-list__message-box__create-info__create-date
+          2020-1-2
+      .chat-main__message-list__message-box__message
+        まだメッセージはありません
+  .chat-main__message-form
+    .chat-main__message-form__post
+      .chat-main__message-form__post__post-box
+        %input{type: "text", class: "chat-main__message-form__post__post-box__message", placeholder: "type a message"}
+        %label{class: "chat-main__message-form__post__post-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file",class: "chat-main__message-form__post__post-box__image__file"}
+      %input{type: "submit", class: "chat-main__message-form__post__submit"}
