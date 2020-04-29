@@ -2,12 +2,12 @@
   .side-bar__user-name
     .side-bar__user-name__top-items
       .side-bar__user-name__top-items__name
-        kent
+        = current_user.name
       .side-bar__user-name__top-items__icon
         = link_to "#", class: "side-bar__user-name__top-items__icon__create-group" do
           = icon('far', 'edit')
-        = link_to "#", class: "side-bar__user-name__top-items__icon__edit-account" do
-          = icon('fa', 'cog')
+        = link_to edit_user_path(current_user) do
+          = icon('fa', 'cog', class: 'side-bar__user-name__top-items__icon__edit-account')
   .side-bar__group-list
     .side-bar__group-list__chat-box
       .side-bar__group-list__chat-box__group-name
