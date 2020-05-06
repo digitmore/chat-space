@@ -11,18 +11,8 @@
   .side-bar__group-list
     - current_user.groups.each do |group|
       .side-bar__group-list__chat-box
-        = link_to '#' do
+        = link_to group_messages_path(group) do
           .side-bar__group-list__chat-box__group-name
             = group.name
           .side-bar__group-list__chat-box__last-message
-            メッセージはまだありません。
-    -# .side-bar__group-list__chat-box
-    -#   .side-bar__group-list__chat-box__group-name
-    -#     techcamp
-    -#   .side-bar__group-list__chat-box__last-message
-    -#     まだメッセージがありません
-    -# .side-bar__group-list__chat-box
-    -#   .side-bar__group-list__chat-box__group-name
-    -#     techexpart
-    -#   .side-bar__group-list__chat-box__last-message
-    -#     名前は変更になりました
+            = group.show_last_message

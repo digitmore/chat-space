@@ -126,44 +126,84 @@
   &__message-form{
     background-color: #d2d2d2;
     height: 90px;
-    &__post{
-      height: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0px 40px;
-      &__post-box{
-        background-color: white;
+    width: calc(100vw - 300px);
+    align-items: center;
+    display: flex;
+    &__new-message{
+      position: relative;
+      &__message{
+        margin-left: 40px;
+        padding-left: 10px;
         height: 50px;
-        width: calc(100vw - 80px - 100px - 315px);
-        display: flex;
-        justify-content: space-between;
-        &__message{
-          color: gray;
-          width: 100%;
-          line-height: 50px;
-          padding-left: 10px;
-          border: none;
-        }
+        width: calc(100vw - 500px);
+        border: none;
+      }
+      &__mask{
+        position: absolute;
+        top: 15px;
+        right: 150px;
         &__image{
-          line-height: 50px;
-          padding-right: 10px;
-          cursor: pointer;
-          &__file{
+          &__hidden{
             display: none;
+            cursor: pointer;
           }
         }
       }
       &__submit{
+        height: 50px;
+        width: 100px;
         background-color: #38aef0;
         color: #ffffff;
         font-size: 16px;
-        height: 50px;
-        width: 100px;
-        text-align: center;
-        line-height: 50px;
+        margin-left: 15px;
         cursor: pointer;
       }
     }
   }
+  // &__message-form{
+  //   background-color: #d2d2d2;
+  //   height: 90px;
+  //   &__post{
+  //     height: 100%;
+  //     display: flex;
+  //     justify-content: space-between;
+  //     align-items: center;
+  //     padding: 0px 40px;
+  //     &__post-box{
+  //       background-color: white;
+  //       height: 50px;
+  //       width: calc(100vw - 80px - 100px - 315px);
+  //       display: flex;
+  //       justify-content: space-between;
+  //       &__form{
+
+  //       }
+  //       &__message{
+  //         color: gray;
+  //         width: 100%;
+  //         line-height: 50px;
+  //         padding-left: 10px;
+  //         border: none;
+  //       }
+  //       &__image{
+  //         line-height: 50px;
+  //         padding-right: 10px;
+  //         cursor: pointer;
+  //         &__file{
+  //           display: none;
+  //         }
+  //       }
+  //     }
+  //     &__submit{
+  //       background-color: #38aef0;
+  //       color: #ffffff;
+  //       font-size: 16px;
+  //       height: 50px;
+  //       width: 100px;
+  //       text-align: center;
+  //       line-height: 50px;
+  //       cursor: pointer;
+  //     }
+  //   }
+  // }
 }
