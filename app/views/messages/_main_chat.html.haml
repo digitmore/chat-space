@@ -3,6 +3,7 @@
     .chat-main__group-info__group-name
       = @group.name
     .chat-main__group-info__members-name
+      Member:
       - @group.users.each do |user|
         = user.name
     = link_to edit_group_path(@group), class: "chat-main__group-info__edit-group" do
