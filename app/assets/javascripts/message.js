@@ -4,7 +4,7 @@ $(function(){
      var html =
      `<div class="message" data-message-id="${message.id}"></div>
      <div class="chat-main__message-list__message-box">
-         <div chat-main__message-list__message-box__create-info">
+         <div class="chat-main__message-list__message-box__create-info">
            <div class="chat-main__message-list__message-box__create-info__user-name">
              ${message.user_name}
            </div>
