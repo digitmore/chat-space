@@ -5,7 +5,9 @@
 .wrapper{
   display: flex;
 }
-
+a {
+  text-decoration: none;
+  }
 .side-bar{
   background-color: #253141;
   height: 100vh;
@@ -86,6 +88,7 @@
     &__edit-group{
       color: #38aef0;
       text-decoration: none;
+      border: 1px solid;
       border-color: #38aef0;
       font-size: 16px;
       height: 40px;
@@ -132,6 +135,7 @@
     display: flex;
     &__new-message{
       position: relative;
+      display: flex;
       &__message{
         margin-left: 40px;
         padding-left: 10px;
@@ -142,7 +146,7 @@
       &__mask{
         position: absolute;
         top: 15px;
-        right: 150px;
+        right: 165px;
         &__image{
           &__hidden{
             display: none;
@@ -157,6 +161,7 @@
         color: #ffffff;
         font-size: 16px;
         margin-left: 15px;
+        margin-right: 40px;
         cursor: pointer;
       }
     }
